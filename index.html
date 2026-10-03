@@ -1,95 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>eldev.io</title>
-  <!-- Icono en PC -->
-  <link rel="icon" href="images/favicon_io/favicon-32x32.png" type="image/png">
-  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,">
-  <!-- Icono para iPhone/iPad -->
-<link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
-
-<!-- Iconos para Android -->
-<link rel="icon" type="image/png" sizes="192x192" href="images/favicon_io/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="images/favicon_io/android-chrome-512x512.png">
-
-<!-- Manifesto para Android (PWA) -->
-<link rel="manifest" href="images/favicon_io/site.webmanifest">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio de Enmanuel López: productos digitales, aplicaciones móviles y herramientas para macOS.">
+  <meta name="theme-color" content="#08090a">
+  <title>Enmanuel López — Diseñador &amp; desarrollador</title>
+  <link rel="icon" href="images/favicon_io/favicon-32x32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="images/favicon_io/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 </head>
 <body>
-  <div class="page-container">
-    <div class="layout-container">
-      <div class="content-wrapper">
-        <div class="layout-content-container">
-          <div class="hero-container">
-            <div class="hero-content">
-              <div class="hero-text">
-                <h1>Hola, Soy Enmanuel</h1>
-                <h2>Apasionado por la tecnología y motivado por resolver problemas reales, desarrollo proyectos que buscan hacer la vida un poco más fácil. Este espacio es una muestra de lo que hago y de quién soy. ¡Explóralo a tu ritmo!</h2>
-              </div>
-              <div class="hero-buttons">
-                <button class="primary-button">
-                  <a href="#proyectos" class="btn btn-primary">Mis Proyectos</a>
-                </button>
-                <button class="secondary-button">
-                  <a href="#sobre-mi" class="btn btn-secondary">Sobre mí</a>
-                </button>
-              </div>
-            </div>
-          </div>
-          
-          <section id="proyectos">
-          <h2 class="section-title">Mis Proyectos</h2>
-          <div class="projects-grid">
-            <a href="https://coinlyzer.netlify.app" target="_blank" class="project-link">
-  <div class="project-card">
-    <div class="project-image" style='background-image: url("images/CoinLyzer.png");'></div>
-    <div class="project-info">
-      <p class="project-name">CoinLyzer</p>
-      <p class="project-description">
-        Controla tus finanzas personales con facilidad: registra tus ingresos, gastos y ahorros desde un solo lugar.
-      </p>
-    </div>
-  </div>
-</a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-<a href="https://priorix.netlify.app" target="_blank" class="project-link">
-  <div class="project-card">
-    <div class="project-image" style='background-image: url("images/Priorix.png");'></div>
-    <div class="project-info">
-      <p class="project-name">Priorix</p>
-      <p class="project-description">
-        Una herramienta para mantener el control de tus pendientes y avanzar con claridad.
-      </p>
-    </div>
-  </div>
-</a>
+  <header class="site-header" data-header>
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand-mark" aria-hidden="true">EL</span>
+      <span>eldev.io</span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a class="nav-cta" href="https://github.com/eSneakin" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
 
-            <div class="project-card">
-              <div class="project-image" style='background-image: url("images/Coming\ Soon.png");'></div>
-              <div class="project-info">
-                <p class="project-name">Coming Soon</p>
-                <p class="project-description">Actualmente en construcción. Prepárate para lo que viene.</p>
-              </div>
-            </div>
-          </div>
-          </section>
-
-          <section id="sobre-mi">
-          <h2 class="section-title">Sobre Mi</h2>
-          <p class="about-text">
-            Me apasiona crear experiencias visuales que realmente conecten con las personas. Nacido en Santo Domingo, República Dominicana, combino diseño funcional y comunicación visual para lograr proyectos que equilibren estética y utilidad. Creo en la simplicidad, la utilidad y el poder de las ideas bien ejecutadas. Este espacio refleja esa visión.
-          </p>
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Santo Domingo, RD</p>
+        <h1 id="hero-title">Diseño ideas.<br><span>Construyo productos.</span></h1>
+        <p class="hero-description">Soy Enmanuel López, diseñador y desarrollador enfocado en crear experiencias digitales útiles, cuidadas y fáciles de usar.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#proyectos">Explorar proyectos <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="https://github.com/eSneakin" target="_blank" rel="noreferrer">Ver GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-    </div>
-  </div>
-  </section>
+      <div class="hero-meta reveal" aria-label="Especialidades">
+        <span>Producto digital</span>
+        <span>Desarrollo web</span>
+        <span>Apps nativas</span>
+      </div>
+    </section>
+
+    <section class="projects section-shell" id="proyectos" aria-labelledby="projects-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">Trabajo seleccionado</p>
+          <h2 id="projects-title">Proyectos</h2>
+        </div>
+        <p>Productos creados para resolver problemas reales con tecnología clara y diseño intencional.</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card project-coin reveal">
+          <div class="project-visual" aria-label="Logo provisional de CoinLyzer y Priorix Mobile">
+            <div class="placeholder-logo placeholder-duo" aria-hidden="true"><span>C</span><span>P</span></div>
+            <span class="visual-label">Mobile / Flutter</span>
+          </div>
+          <div class="project-copy">
+            <div class="project-topline"><span>01</span><span class="project-status">En desarrollo</span></div>
+            <h3>CoinLyzer &amp;<br>Priorix Mobile</h3>
+            <p>Dos experiencias en una app móvil: finanzas personales para entender cada movimiento y tareas organizadas para avanzar con claridad.</p>
+            <ul class="tech-list" aria-label="Tecnologías"><li>Flutter</li><li>Firebase</li><li>iOS</li><li>Android</li></ul>
+          </div>
+        </article>
+
+        <a class="project-card project-tracklet reveal" href="https://github.com/eSneakin/Tracklet" target="_blank" rel="noreferrer" aria-label="Ver Tracklet en GitHub, abre en una pestaña nueva">
+          <div class="project-visual">
+            <img class="tracklet-logo" src="images/tracklet-logo.png" alt="Logo de Tracklet" width="1254" height="1254">
+            <span class="visual-label">macOS / SwiftUI</span>
+          </div>
+          <div class="project-copy">
+            <div class="project-topline"><span>02</span><span class="project-status status-live">Código abierto</span></div>
+            <h3>Tracklet <span class="title-arrow" aria-hidden="true">↗</span></h3>
+            <p>Compañero nativo de Spotify para macOS. Mantiene música, controles y widgets siempre al alcance sin abrir el reproductor completo.</p>
+            <ul class="tech-list" aria-label="Tecnologías"><li>Swift</li><li>SwiftUI</li><li>WidgetKit</li><li>Spotify API</li></ul>
+          </div>
+        </a>
+
+        <a class="project-card project-rentcar reveal" href="https://renctcar.netlify.app/" target="_blank" rel="noreferrer" aria-label="Abrir RentCar, abre en una pestaña nueva">
+          <div class="project-visual">
+            <img class="rentcar-logo" src="images/rentcar logo.png" alt="Logo de RentCar" width="1254" height="1254">
+            <span class="visual-label">Web / Gestión</span>
+          </div>
+          <div class="project-copy">
+            <div class="project-topline"><span>03</span><span class="project-status status-live">Disponible</span></div>
+            <h3>RentCar <span class="title-arrow" aria-hidden="true">↗</span></h3>
+            <p>Plataforma operativa para administrar vehículos, clientes, inspecciones, rentas y reportes desde un solo lugar.</p>
+            <ul class="tech-list" aria-label="Tecnologías"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>SPA</li></ul>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="about section-shell reveal" id="sobre-mi" aria-labelledby="about-title">
+      <p class="eyebrow">Sobre mí</p>
+      <div class="about-grid">
+        <h2 id="about-title">Menos ruido.<br>Más intención.</h2>
+        <div class="about-copy">
+          <p>Me gusta convertir ideas complejas en experiencias simples. Combino diseño funcional, comunicación visual y desarrollo para construir productos que se sienten bien desde el primer uso.</p>
+          <p>Trabajo desde Santo Domingo, creando para web, móvil y macOS.</p>
+          <a class="text-link" href="https://github.com/eSneakin" target="_blank" rel="noreferrer">Conoce más en GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <a class="brand" href="#inicio" aria-label="Volver arriba"><span class="brand-mark" aria-hidden="true">EL</span><span>eldev.io</span></a>
+    <p>Diseñado y construido por Enmanuel López.</p>
+    <p>© <span data-year></span></p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
